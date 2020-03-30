@@ -1,0 +1,102 @@
+.page_head{
+    width:75%;
+    height: 80px;
+    margin-left: 10%;
+    margin-top: 20px;
+    border-bottom: 1px solid darkgray;
+}
+.login{
+    float: right;
+    height: 80%;
+    width:100px;
+    text-align: center;
+    padding-top: 25px;
+    margin-right: 10px;
+}
+.login_button{
+    width: 100%;
+    height:100%;
+}
+.latest_news{
+    float: left;
+    height: 80%;
+    width:100px;
+    text-align: center;
+    padding-top: 25px;
+    margin-left: 35px;
+}
+.company_icon{
+    float: left;
+    height: 80%;
+    width:100px;
+    text-align: center;
+    padding-top: 25px;
+}
+.news_main{
+    width:50%;
+    height:180px;
+    margin-left: 20%;
+    padding-top: 10px;
+    padding-bottom:20px ;
+    border-bottom: 1px solid darkgray;
+}
+
+.news_title{
+    width: 100%;
+    height: 40px;
+}
+.news_content{
+    width: 100%;
+    height:110px;
+    float: left;
+}
+.news_discription0{
+    float: left;
+    width: 18%;
+    height: 100%;
+}
+.news_discription{
+    width: 100%;
+    height:100%;
+}
+.news_discription1{
+    float: right;
+    width: 80%;
+    height: 100%;
+}
+.news_interaction{
+    height:40px;
+    float: left;
+    width: 100%;
+    margin-top: 3px;
+}
+.news_comments{
+    float: left;
+    width: 20%;
+    height: 80%;
+    margin-left: 6px;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 10px;
+}
+.opinions{
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+.like_this{
+    width: 60%;
+    float: left;
+    height: 100%;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 10px;
+}
+.dislike_this{
+    float: right;
+    width: 30%;
+    height: 100%;
+    border-radius: 4px;
+    text-align: center;
+    padding-top: 10px;
+}

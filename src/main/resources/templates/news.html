@@ -1,0 +1,37 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" th:href="@{/static/css/news.css}" type="text/css"/>
+    <!--<style th:src="@{/static/js/login.js}"></style>-->
+    <script th:src="@{/static/js/news.js}"></script>
+    <script th:src="@{/static/js/jquery-3.4.1.js}"></script>
+</head>
+<body>
+    <div th:class="page_head">
+        <div th:class="company_icon" th:text="silence"></div>
+        <div th:class="latest_news" th:text="最新资讯"></div>
+        <div th:class="login">
+            <a th:class="login_button" onclick="toLogin()">登录</a>
+        </div>
+    </div>
+    <div th:class="news_main" th:each="news,iterStat:${newsList}">
+        <div th:class="news_title" th:text="${news.title}"></div>
+        <div th:class="news_content">
+            <div th:class="news_discription0"><img th:class="news_discription" th:src="@{/static/pictures/{picsid}.jpg(picsid=${news.getDescription()})}"></div>
+            <div th:class="news_discription1" th:text="${news.content.subSequence(0,130)}+'...'"></div>
+        </div>
+        <div th:class="news_interaction">
+            <div th:class="opinions">
+                <div th:class="like_this" th:text="'赞同 '+${news.getOpinions()}"></div>
+                <div th:class="dislike_this" th:text="反对"></div>
+            </div>
+            <div th:class="news_comments" th:text="${news.getComments()}+'条评论'"></div>
+        </div>
+        <!--<div th:class="white_space"></div>-->
+    </div>
+</body>
+</html>

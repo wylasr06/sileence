@@ -1,0 +1,27 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/static/css/login.css}"/>
+    <script th:src="/static/js/login.js"></script>
+</head>
+<body>
+    <div th:id="login_main">
+        <div th:id="username">
+            <input type="text" th:name="username" th:id="username_input" th:placeholder="请输入用户名或邮箱"/>
+        </div>
+        <div th:id="password">
+            <input type="password" th:name="password" th:id="password_input" th:placeholder="密码"/>
+        </div>
+        <div th:id="login_button">
+            <button th:id="loginn" onclick="login()">登录</button>
+        </div>
+        <div th:id="register_button">
+            <button th:id="register" onclick="register()">注册</button>
+        </div>
+    </div>
+</body>
+</html>
