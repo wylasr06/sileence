@@ -1,3 +1,3 @@
 function toLogin() {
-    window.location.href = "/login";
+    window.location.href = "/toLogin";
 }

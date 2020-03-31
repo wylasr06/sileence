@@ -1,6 +1,6 @@
-package com.expencesiveTime.slience.controller;
+package com.expencesiveTime.slieence.controller;
 
-import com.expencesiveTime.slience.service.UserService;
+import com.expencesiveTime.slieence.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

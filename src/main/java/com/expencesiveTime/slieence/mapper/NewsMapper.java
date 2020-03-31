@@ -1,6 +1,6 @@
-package com.expencesiveTime.slience.mapper;
+package com.expencesiveTime.slieence.mapper;
 
-import com.expencesiveTime.slience.model.News;
+import com.expencesiveTime.slieence.model.News;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 

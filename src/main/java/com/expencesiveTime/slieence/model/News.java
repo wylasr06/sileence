@@ -1,4 +1,4 @@
-package com.expencesiveTime.slience.model;
+package com.expencesiveTime.slieence.model;
 
 import java.util.Date;
 

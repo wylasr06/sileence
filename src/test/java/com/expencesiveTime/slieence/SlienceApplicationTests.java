@@ -1,4 +1,4 @@
-package com.expencesiveTime.slience;
+package com.expencesiveTime.slieence;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

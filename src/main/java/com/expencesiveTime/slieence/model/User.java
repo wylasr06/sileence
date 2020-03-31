@@ -1,10 +1,26 @@
-package com.expencesiveTime.slience.model;
+package com.expencesiveTime.slieence.model;
 
 
 public class User {
     private String name;
-    private String password;
+    private String password = "";
     private int id;
+    private String headUrl;
+
+    public User(String name, int id, String headUrl) {
+        this.name = name;
+        this.id = id;
+        this.headUrl = headUrl;
+    }
+
+    public String getHeadUrl() {
+        return headUrl;
+    }
+
+    public void setHeadUrl(String headUrl) {
+        this.headUrl = headUrl;
+    }
+
     public User(){
 
     }

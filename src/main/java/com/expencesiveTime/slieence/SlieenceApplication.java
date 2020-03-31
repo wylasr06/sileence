@@ -1,12 +1,12 @@
-package com.expencesiveTime.slience;
+package com.expencesiveTime.slieence;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
-public class SlienceApplication {
+public class SlieenceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SlienceApplication.class, args);
+		SpringApplication.run(SlieenceApplication.class, args);
 	}
 
 }
