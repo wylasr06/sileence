@@ -1,7 +1,7 @@
-package com.expencesiveTime.slieence.controller;
+package com.expencesiveTime.sileence.controller;
 
-import com.expencesiveTime.slieence.service.NewsServices;
-import com.expencesiveTime.slieence.model.News;
+import com.expencesiveTime.sileence.service.NewsServices;
+import com.expencesiveTime.sileence.model.News;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

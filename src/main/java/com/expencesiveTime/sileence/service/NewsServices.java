@@ -1,7 +1,7 @@
-package com.expencesiveTime.slieence.service;
+package com.expencesiveTime.sileence.service;
 
-import com.expencesiveTime.slieence.mapper.NewsMapper;
-import com.expencesiveTime.slieence.model.News;
+import com.expencesiveTime.sileence.mapper.NewsMapper;
+import com.expencesiveTime.sileence.model.News;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

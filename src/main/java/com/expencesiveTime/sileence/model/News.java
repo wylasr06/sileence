@@ -1,4 +1,4 @@
-package com.expencesiveTime.slieence.model;
+package com.expencesiveTime.sileence.model;
 
 import java.util.Date;
 

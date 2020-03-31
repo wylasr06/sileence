@@ -1,6 +1,6 @@
-package com.expencesiveTime.slieence.mapper;
+package com.expencesiveTime.sileence.mapper;
 
-import com.expencesiveTime.slieence.model.News;
+import com.expencesiveTime.sileence.model.News;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 
@@ -10,7 +10,7 @@ import java.util.List;
 public interface NewsMapper {
 
     @Select("select id,title,content,description,opinions,comments,createdTime,isAvailable from silence.news order by createdTime desc")
-    public List<News> getNewsList();
+    List<News> getNewsList();
 
 
 }

@@ -1,4 +1,4 @@
-package com.expencesiveTime.slieence.controller;
+package com.expencesiveTime.sileence.controller;
 
 import com.alibaba.fastjson.JSON;
 import org.springframework.stereotype.Controller;

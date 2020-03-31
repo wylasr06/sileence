@@ -1,4 +1,4 @@
-package com.expencesiveTime.slieence;
+package com.expencesiveTime.sileence;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

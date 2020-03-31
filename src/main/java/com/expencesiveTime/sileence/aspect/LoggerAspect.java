@@ -1,4 +1,4 @@
-package com.expencesiveTime.slieence.aspect;
+package com.expencesiveTime.sileence.aspect;
 
 import com.alibaba.fastjson.JSON;
 import org.aspectj.lang.JoinPoint;
@@ -10,11 +10,11 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class LoggerAspect {
-    @Before("execution(public * com.expencesiveTime.slieence.mapper.UserMapper.*(..))")
+    @Before("execution(public * com.expencesiveTime.sileence.mapper.UserMapper.*(..))")
     public void beforeExecute(JoinPoint joinPoint){
         System.out.println("before function execute : "+ JSON.toJSONString(joinPoint.getSignature()));
     }
-    @After("execution( public * com.expencesiveTime.slieence.mapper.*.*(..))")
+    @After("execution( public * com.expencesiveTime.sileence.mapper.*.*(..))")
     public void afterExecute(){
         System.out.println("after function execute ---");
     }
