@@ -1,4 +1,4 @@
-package com.expencesiveTime.sileence.mapper;
+package com.expensivetime.sileence.mapper;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

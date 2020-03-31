@@ -1,16 +1,15 @@
-package com.expencesiveTime.sileence.controller;
+package com.expensivetime.sileence.controller;
 
-import com.expencesiveTime.sileence.service.NewsServices;
-import com.expencesiveTime.sileence.model.News;
+import com.expensivetime.sileence.service.NewsServices;
+import com.expensivetime.sileence.model.News;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-
-@Controller
+@RestController
 public class IndexController {
     @Autowired
     NewsServices newsServices;

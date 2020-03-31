@@ -1,6 +1,6 @@
-package com.expencesiveTime.sileence.mapper;
+package com.expensivetime.sileence.mapper;
 
-import com.expencesiveTime.sileence.model.User;
+import com.expensivetime.sileence.model.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;

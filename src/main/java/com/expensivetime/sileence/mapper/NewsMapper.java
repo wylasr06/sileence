@@ -1,6 +1,6 @@
-package com.expencesiveTime.sileence.mapper;
+package com.expensivetime.sileence.mapper;
 
-import com.expencesiveTime.sileence.model.News;
+import com.expensivetime.sileence.model.News;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 

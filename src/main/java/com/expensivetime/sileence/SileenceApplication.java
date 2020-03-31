@@ -1,12 +1,12 @@
-package com.expencesiveTime.sileence;
+package com.expensivetime.sileence;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
-public class SlieenceApplication {
+public class SileenceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SlieenceApplication.class, args);
+		SpringApplication.run(SileenceApplication.class, args);
 	}
 
 }
