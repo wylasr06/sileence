@@ -1,15 +1,15 @@
 package com.expensivetime.sileence.service;
 
 import com.expensivetime.sileence.model.User;
-import com.expensivetime.sileence.mapper.UserMapper;
+import com.expensivetime.sileence.mapper.UserMapperImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 public class UserService {
-    private UserMapper userDAO;
+    private UserMapperImpl userDAO;
     @Autowired
-    public UserService(UserMapper userDAO){
+    public UserService(UserMapperImpl userDAO){
         this.userDAO = userDAO;
     }
     public User getUser(int id){

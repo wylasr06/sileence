@@ -14,7 +14,9 @@ import static org.junit.Assert.assertEquals;
 public class UserMapperTests {
 
     @Autowired
-    UserMapper userMapper;
+    UserMapperImpl userMapper;
+
+
 
     @Test
     public void isRegisteredUserTest(){

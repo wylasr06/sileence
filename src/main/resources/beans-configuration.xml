@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean scope="singleton" name="me" class="com.expensivetime.sileence.utils.MyBean">
+                <property name="me">
+                        <value>1024</value>
+                </property>
+        </bean>
+       <!-- <bean id="myMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
+                <property name="myMapperInterface" value="com.expensivetime.sileence.mapper.MyMapper"></property>
+        </bean>-->
+</beans>
