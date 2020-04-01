@@ -1,3 +1,4 @@
+/*
 package com.expensivetime.sileence.interceptor;
 
 import org.springframework.beans.factory.ListableBeanFactory;
@@ -9,8 +10,14 @@ import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguratio
 import org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+**/
+/**
+ 会拦截静态资源：/static/**
+*/
+/**
 @Configuration
 public class WebMVCConfiguration extends WebMvcConfigurationSupport {
 
@@ -25,4 +32,10 @@ public class WebMVCConfiguration extends WebMvcConfigurationSupport {
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(securityInterceptor).addPathPatterns("/**").excludePathPatterns("/toLogin");
     }
+    @Override
+    protected void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/**").addResourceLocations("classpath:/static/**");
+        super.addResourceHandlers(registry);
+    }
 }
+*/

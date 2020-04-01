@@ -1,0 +1,32 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>个人主页</title>
+    <link rel="stylesheet" th:href="@{/static/css/profile.css}" type="text/css"/>
+    <script th:src="@{/static/js/jquery-3.4.1.js}"></script>
+    <script th:src="@{/static/js/profile.js}"></script>
+</head>
+<body>
+    <div th:class="bodystyle">
+        <div th:id="profile_header">
+            <div th:class="releaseIssues_div">
+                <img th:src="@{/static/pictures/release.png}" th:class="releaseIssues_img">
+            </div>
+            <div th:class="edit_panel_div" th:contenteditable="plaintext-only">
+            </div>
+            <div th:class="issuePicture_div">
+            </div>
+            <div th:class="releaseIssue_div">发表</div>
+            <div th:class="addPicture_div">添加图片</div>
+            <div th:class="releaseHistory_div">
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
