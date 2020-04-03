@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Select;
 @Mapper
 public interface UserMapperImpl {
 
-    @Select("select name from silence.user where id = #{id}")
+    @Select("select name,id,password,headUrl from silence.user where id = #{id}")
     public User getUser(@Param("id") int id);
 
     @Select("select id,name,headurl,password from silence.user where name = #{name} and password = #{password}")

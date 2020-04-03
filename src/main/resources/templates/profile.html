@@ -12,21 +12,38 @@
 <body>
     <div th:class="bodystyle">
         <div th:id="profile_header">
-            <div th:class="releaseIssues_div">
-                <img th:src="@{/static/pictures/release.png}" th:class="releaseIssues_img">
-            </div>
-            <div th:class="edit_panel_div" th:contenteditable="plaintext-only">
+            <div th:class="releaseIssues_div_icon">
+                <img th:class="releaseIssues_img" th:src="@{/static/pictures/release.png}">
             </div>
             <div th:class="issuePicture_div">
             </div>
-            <div th:class="releaseIssue_div">发表</div>
-            <div th:class="addPicture_div">添加图片</div>
+            <div th:class="edit_panel_div" th:contenteditable="plaintext-only">
+            </div>
+            <div th:class="issue_trigger_div">
+                <div th:class="releaseIssue_div" >发表</div>
+                <div th:class="addPicture_div">添加图片</div>
+            </div>
             <div th:class="releaseHistory_div">
-
+                <div th:each="issue,iterStat:${newsList}">
+                    <div th:class="issue_image_div_left" >
+                        <img th:class="issue_image_img_left" th:src="@{/static/pictures/{path}.jpg(path=${issue.getDescription()})}">
+                    </div>
+                    <div th:class="issue_content_div_right">
+                        <div th:class="issue_content_title" th:text="${issue.getTitle()}"></div>
+                        <div th:class="issue_release_time" th:text="${issue.getCreatedTime()}"></div>
+                        <div th:if="${issue.getContent().length() lt 160}">
+                            <div th:class="issue_content_profile" th:text="${issue.getContent()}"></div>
+                        </div>
+                        <div th:if="${issue.getContent().length() ge 160}">
+                            <div th:class="issue_content_profile" th:text="${issue.getContent().substring(0,160)+'...'}"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div th:class="profile_foot">
+            © 2020, Sileence Tech. 安竟科技（杭州）有限公司浙ICP备00000000号-x增值电信业务许可证 浙 A0-20180000联系我们加入我们
+        </div>
     </div>
-
-
 </body>
 </html>

@@ -1,6 +1,6 @@
 body{
-    background-image: url("/static/pictures/profile.png");
-    background-size: cover;
+    /*background-image: url("/static/pictures/profile.png");*/
+    /*background-size: cover;*/
 }
 
 #profile_header{
@@ -10,7 +10,7 @@ body{
     margin-left: 10%;
     margin-top: 20px;
 }
-.releaseIssues_div{
+.releaseIssues_div_icon{
     float: right;
     width: 50px;
     height: 50px;
@@ -25,46 +25,121 @@ body{
 }
 
 .edit_panel_div{
-    width:50%;
-    min-height:128px;
-    background-color: white;
-    /*display: none;*/
-    float: left;
-    margin-left: 25%;
-    margin-top: 100px;
+    width:616px;
+    min-height:148px;
+    background-color: orange;
+    display: none;
+    float: right;
+    margin-right: 104px;
+    /*margin-left: 25%;*/
+    margin-top: 110px;
     padding-left: 40px;
     padding-top: 20px;
     padding-right: 40px;
 }
 .issuePicture_div{
-    width: 160px;
-    height:180px;
+    width: 140px;
+    height:168px;
     float: left;
-    margin-left: 25%;
+    margin-top: 110px;
+    margin-left: 175px;
     background-color: chartreuse;
+    display: none;
+}
+.issue_trigger_div{
+    width:616px;
+    height:30px;
+    /*display: none;*/
+    float: right;
+    margin-right: 179px;
+    /*margin-left: 25%;*/
+    margin-top: 10px;
 }
 .releaseIssue_div{
     float: right;
-    margin-right: 220px;
     width:80px;
     height:30px;
-    background-color: cadetblue;
+    background-color: orange;
     text-align: center;
     line-height: 30px;
+    display: none;
 }
 .addPicture_div{
+    margin-right: 10px;
     float: right;
-    margin-right: 25px;
     width:80px;
     height:30px;
-    background-color: cornflowerblue;
+    background-color: orange;
     text-align: center;
     line-height: 30px;
+    display: none;
 }
 .releaseHistory_div{
-    width: 56%;
+    width: 70%;
     float: left;
-    margin-left: 25%;
-    background-color: white;
-    min-height: 200px;
+    margin-left: 181px;
+    background-color: orange;
+    min-height: 600px;
+    margin-top: 110px;
+}
+.issue_image_div_left{
+    float: left;
+    width: 160px;
+    height:170px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.issue_image_img_left{
+    float: left;
+    width: 160px;
+    height:170px;
+}
+.issue_content_div_right{
+    float: right;
+    /*background-color: palegoldenrod;*/
+    width: 650px;
+    height:170px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.issue_content_title{
+    float: left;
+    /*background-color: darkgray;*/
+    width: 480px;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 30px;
+    //text-align: center;
+    line-height: 30px;
+}
+.issue_release_time{
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    line-height: 30px;
+    /*background-color: orange;*/
+}
+.issue_content_profile{
+    float: left;
+    /*background-color: burlywood;*/
+    width: 630px;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 120px;
+    /*text-align: center;*/
+    line-height: 30px;
+}
+.profile_foot{
+    min-height: 100px;
+    width: 80%;
+    border: 1px solid black;
+    margin-left: 10%;
+    margin-top: 20px;
+    float: left;
+    margin-bottom: 50px;
+    text-align: center;
+    line-height: 100px;
 }

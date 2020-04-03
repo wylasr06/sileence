@@ -1,6 +1,7 @@
 package com.expensivetime.sileence.model;
 
-import java.util.Date;
+
+import java.sql.Date;
 
 public class News {
 
