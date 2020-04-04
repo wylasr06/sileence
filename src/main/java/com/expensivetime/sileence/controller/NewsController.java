@@ -28,4 +28,8 @@ public class NewsController {
         System.out.println("====NewsController.getProfile : "+ JSON.toJSONString(newsList));
         return "profile";
     }
+    @RequestMapping("/upload")
+    public String upload(){
+        return "uploadFile";
+    }
 }

@@ -16,12 +16,15 @@
                 <img th:class="releaseIssues_img" th:src="@{/static/pictures/release.png}">
             </div>
             <div th:class="issuePicture_div">
+                <input  type="file" th:class=""/>
             </div>
             <div th:class="edit_panel_div" th:contenteditable="plaintext-only">
             </div>
             <div th:class="issue_trigger_div">
                 <div th:class="releaseIssue_div" >发表</div>
-                <div th:class="addPicture_div">添加图片</div>
+                <div th:class="addPicture_div">
+                    添加图片
+                </div>
             </div>
             <div th:class="releaseHistory_div">
                 <div th:each="issue,iterStat:${newsList}">

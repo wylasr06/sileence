@@ -1,12 +1,13 @@
 body{
     /*background-image: url("/static/pictures/profile.png");*/
     /*background-size: cover;*/
+    background-color: darkgray;
 }
 
 #profile_header{
     height: 100px;
     width: 80%;
-    border: 1px solid black;
+    border: 1px solid white;
     margin-left: 10%;
     margin-top: 20px;
 }
@@ -27,7 +28,7 @@ body{
 .edit_panel_div{
     width:616px;
     min-height:148px;
-    background-color: orange;
+    background-color: white;
     display: none;
     float: right;
     margin-right: 104px;
@@ -43,7 +44,7 @@ body{
     float: left;
     margin-top: 110px;
     margin-left: 175px;
-    background-color: chartreuse;
+    background-color: white;
     display: none;
 }
 .issue_trigger_div{
@@ -59,7 +60,7 @@ body{
     float: right;
     width:80px;
     height:30px;
-    background-color: orange;
+    background-color: white;
     text-align: center;
     line-height: 30px;
     display: none;
@@ -69,7 +70,7 @@ body{
     float: right;
     width:80px;
     height:30px;
-    background-color: orange;
+    background-color: white;
     text-align: center;
     line-height: 30px;
     display: none;
@@ -78,7 +79,7 @@ body{
     width: 70%;
     float: left;
     margin-left: 181px;
-    background-color: orange;
+    background-color: white;
     min-height: 600px;
     margin-top: 110px;
 }
@@ -135,7 +136,7 @@ body{
 .profile_foot{
     min-height: 100px;
     width: 80%;
-    border: 1px solid black;
+    border: 1px solid white;
     margin-left: 10%;
     margin-top: 20px;
     float: left;
@@ -143,3 +144,22 @@ body{
     text-align: center;
     line-height: 100px;
 }
+/**文件上传*/
+.upload-button {
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: block;
+    float: left;
+}
+
+.profile-pic {
+    max-width: 200px;
+    max-height: 200px;
+    display: none;
+}
+
+.file-upload {
+    display: none;
+}
+/**文件上传*/
