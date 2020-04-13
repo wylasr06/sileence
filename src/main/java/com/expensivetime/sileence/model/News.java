@@ -13,6 +13,40 @@ public class News {
     private  int comments;
     private Date createdTime;
     private String isAvailable;
+    private int userId;
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public News(){}
+    public News(String title, String content, String description, int opinions, int comments, Date createdTime, String isAvailable,int userId) {
+        this.title = title;
+        this.userId = userId;
+        this.content = content;
+        this.description = description;
+        this.opinions = opinions;
+        this.comments = comments;
+        this.createdTime = createdTime;
+        this.isAvailable = isAvailable;
+    }
+
+    public News(int id, String title, String content, String description, int opinions, int comments, Date createdTime, String isAvailable,int userId) {
+        this.id = id;
+        this.userId = userId;
+        this.title = title;
+        this.content = content;
+        this.description = description;
+        this.opinions = opinions;
+        this.comments = comments;
+        this.createdTime = createdTime;
+        this.isAvailable = isAvailable;
+
+    }
 
     public Date getCreatedTime() {
         return createdTime;

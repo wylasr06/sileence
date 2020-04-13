@@ -145,17 +145,19 @@ body{
     line-height: 100px;
 }
 /**文件上传*/
-.upload-button {
-    padding: 4px;
-    border: 1px solid black;
-    border-radius: 5px;
-    display: block;
-    float: left;
-}
+/*.upload-button {*/
+/*    padding: 4px;*/
+/*    border: 1px solid black;*/
+/*    border-radius: 5px;*/
+/*    display: block;*/
+/*    float: left;*/
+/*}*/
 
 .profile-pic {
     max-width: 200px;
     max-height: 200px;
+    width: 100%;
+    height: 100%;
     display: none;
 }
 

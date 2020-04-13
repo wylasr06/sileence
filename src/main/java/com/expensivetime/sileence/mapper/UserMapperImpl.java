@@ -8,6 +8,8 @@ import org.apache.ibatis.annotations.Select;
 @Mapper
 public interface UserMapperImpl {
 
+    @Select("select id,name,password,headUrl from silence.user where name = #{name} and password = #{password}")
+    public User getCurrentUser(String name,String password);
     @Select("select name,id,password,headUrl from silence.user where id = #{id}")
     public User getUser(@Param("id") int id);
 
@@ -16,4 +18,6 @@ public interface UserMapperImpl {
 
     @Insert("insert into silence.user(name,password) values (#{name},#{password})")
     public int register(String name,String password);
+
+
 }

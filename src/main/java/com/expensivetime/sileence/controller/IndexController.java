@@ -24,11 +24,12 @@ public class IndexController {
     }
     @RequestMapping("/toLogin")
     public String login(){
+        System.out.println("/toLogin 当前的线程名称 "+Thread.currentThread().getName());
         return "login";
     }
 
-    @ExceptionHandler
+    /*@ExceptionHandler
     public void handleException(){
         System.out.println("出现异常了。。。");
-    }
+    }*/
 }

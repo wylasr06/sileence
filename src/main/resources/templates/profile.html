@@ -16,7 +16,8 @@
                 <img th:class="releaseIssues_img" th:src="@{/static/pictures/release.png}">
             </div>
             <div th:class="issuePicture_div">
-                <input  type="file" th:class=""/>
+                <input  type="file" th:class="file-upload" accept="image/*"/>
+                <img class="profile-pic"/>
             </div>
             <div th:class="edit_panel_div" th:contenteditable="plaintext-only">
             </div>
@@ -27,7 +28,7 @@
                 </div>
             </div>
             <div th:class="releaseHistory_div">
-                <div th:each="issue,iterStat:${newsList}">
+                <div th:class="iterator" th:each="issue,iterStat:${newsList}">
                     <div th:class="issue_image_div_left" >
                         <img th:class="issue_image_img_left" th:src="@{/static/pictures/{path}.jpg(path=${issue.getDescription()})}">
                     </div>

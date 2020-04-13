@@ -22,4 +22,8 @@ public class NewsServices {
     public List<News> getNewsList(User user){
         return newsMapper.getNewsListById(user.getId());
     }
+
+    public int releaseNews(News news,int userId){
+        return newsMapper.releaseNews(news.getTitle(),news.getContent(),news.getDescription(),news.getOpinions(),news.getComments(),news.getCreatedTime(),news.getIsAvailable(),userId);
+    }
 }

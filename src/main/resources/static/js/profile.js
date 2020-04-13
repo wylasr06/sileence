@@ -68,21 +68,21 @@ $(document).ready(
                     let myData = JSON.parse(result);
                     console.log("发表成功 : "+myData.success);
                     if(myData.success > 0){
-                        let news = "";
-                        news = news+"<div th:class='issue_image_div_left'>"+
-                            "<img th:class='issue_image_img_left' src='"+img+"'>"+
-                            "</div>"+
-                            "<div th:class='issue_content_div_right'>"+
-                            "<div th:class='issue_content_title' text='你一定要幸福啊'></div>"+
-                            "<div th:class='issue_release_time' text='2020-04-07'></div>";
-                            if(content.length < 160){
-                                news += "<div th:class='issue_content_profile' th:text='${issue.getContent()}'></div>";                                   ;
-                            }else{
-                                news += "<div th:class='issue_content_profile' th:text=\"${issue.getContent().substring(0,160)+'...'}\"></div>";
-                            }
-                            news += "</div>";
-                        $(news).insertBefore('.iterator');
-
+                        /*let news = "";
+                         news = news+"<div th:class='issue_image_div_left'>"+
+                             "<img th:class='issue_image_img_left' src='"+img+"'>"+
+                             "</div>"+
+                             "<div th:class='issue_content_div_right'>"+
+                             "<div th:class='issue_content_title' text='你一定要幸福啊'></div>"+
+                             "<div th:class='issue_release_time' text='2020-04-07'></div>";
+                             if(content.length < 160){
+                                 news += "<div th:class='issue_content_profile' th:text='${issue.getContent()}'></div>";                                   ;
+                             }else{
+                                 news += "<div th:class='issue_content_profile' th:text=\"${issue.getContent().substring(0,160)+'...'}\"></div>";
+                             }
+                             news += "</div>";
+                         $(news).insertBefore('.iterator');*/
+                        console.log("添加成功之后 ： "+myData.newsList);
                     }else{
                         console.log("fuck you :)")
                     }

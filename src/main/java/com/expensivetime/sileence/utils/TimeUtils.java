@@ -6,6 +6,7 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.UUID;
 
 public class TimeUtils {
     private TimeUtils(){}
@@ -14,17 +15,15 @@ public class TimeUtils {
      * 1585857937000
      * 1585857937000
      * */
-    public static String getTime(){
-        try {
-          return SimpleDateFormat.getInstance().parse("Fri Apr 03 04:05:37 CST 2020").toString();
-
-//            return FastDateFormat.getInstance("YYYY-MM-dd").parse("Fri Apr 03 04:05:37 CST 2020").toString();
-        } catch (ParseException e) {
-            e.printStackTrace();
-        }
-        return "";
+    public static String getCreatedTime(){
+        String createdTime = FastDateFormat.getInstance("yyyy-MM-dd hh:mm:ss").format(new Date());
+        return createdTime;
     }
-   /* public static void main(String[]args){
-        System.out.println(getTime());
-    }*/
+
+/*   public static void main(String ...args){
+       String fileName = UUID.randomUUID().toString().replace("-","");
+       System.out.println(fileName+"在举杯祝福后都走散。"+fileName.length());
+
+       System.out.println(createdTime+" 沉默着懂得我的委屈");
+   }*/
 }

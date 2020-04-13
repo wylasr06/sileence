@@ -12,6 +12,9 @@ public class UserService {
     public UserService(UserMapperImpl userDAO){
         this.userDAO = userDAO;
     }
+    public User getCurrentUser(String name,String password){
+        return userDAO.getCurrentUser(name,password);
+    }
     public User getUser(int id){
         return userDAO.getUser(id);
     }
