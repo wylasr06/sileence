@@ -1,12 +1,13 @@
 package com.expensivetime.sileence.controller;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import com.expensivetime.sileence.model.News;
 import com.expensivetime.sileence.model.User;
 import com.expensivetime.sileence.service.NewsServices;
 import com.expensivetime.sileence.service.UserService;
 import com.expensivetime.sileence.utils.TimeUtils;
-import com.expensivetime.sileence.utils.UserTracker;
+//import com.expensivetime.sileence.utils.UserTracker;
 import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -15,10 +16,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.io.*;
 import java.sql.Date;
-import java.util.Base64;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
+import java.util.*;
 
 @Controller
 public class NewsController {
@@ -71,13 +69,23 @@ public class NewsController {
         }
         /**
          * 写入数据库，并将新的记录返回到前端
-         */
-        User user = UserTracker.getCurrentUser();
-        System.out.println("为什么获取不到呢？？？ "+user.getId()+" , "+user.getName());
+*/
+//        User user = UserTracker.getCurrentUser();
+//        System.out.println("为什么获取不到呢？？？ "+user.getId()+" , "+user.getName());
+        User user = userService.getUser(1);
         String title = jsonData.get("content").toString().substring(0,10);
         News news = new News(title,jsonData.get("content").toString(),fileName,0,0, new Date(System.currentTimeMillis()),"0",user.getId());
         newsServices.releaseNews(news,user.getId());
-        List<News> newsList = newsServices.getNewsList(user);
-        return JSON.toJSONString("{\"newsList\":newsList}");
+        //List<News> newsList = newsServices.getNewsList(user);
+        Map<String,String> fields = new HashMap<>();
+        fields.put("hello","world");
+        fields.put("Mr","Anderson");
+        fields.put("龙井","感谢");
+        JSONObject data = new JSONObject();
+        data.put("result",fields);
+        List<Map> list = new LinkedList<>();
+        list.add(fields);
+        String Json = JSON.toJSONString("{\"list\":"+ JSON.toJSONString(list)+"}");
+        return data.toString();
     }
 }
