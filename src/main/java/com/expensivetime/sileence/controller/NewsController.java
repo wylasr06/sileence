@@ -84,8 +84,9 @@ public class NewsController {
         JSONObject data = new JSONObject();
         data.put("result",fields);
         List<Map> list = new LinkedList<>();
-        list.add(fields);
+        list.add(fields);   //mmm
         String Json = JSON.toJSONString("{\"list\":"+ JSON.toJSONString(list)+"}");
         return data.toString();
+        
     }
 }
